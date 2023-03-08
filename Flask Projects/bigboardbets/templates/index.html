@@ -1,0 +1,16 @@
+{% extends "layout.html" %} 
+
+{% block body %}
+
+<h1>INSERT BETS</h1>
+<form action="/bigboard" method="post"> 
+    <input autocomplete="off" autofocus name="name1" placeholder="Name 1" type="text"> <!-- name = the information that is being submitted -->
+    <input autocomplete="off" autofocus name="betamount" placeholder="Bet Amount" type="number"> 
+    <input autocomplete="off" autofocus name="towin" placeholder="To Win" type="number">  vs 
+    <input autocomplete="off" autofocus name="name2" placeholder="Name 2" type="text"> 
+    <input autocomplete="off" autofocus name="betinfo" placeholder="Bet Information" type="text"> 
+    <input type="submit" value="Input Wager">
+</form>
+
+{% endblock %}
+

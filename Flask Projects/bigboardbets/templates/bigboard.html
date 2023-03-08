@@ -1,0 +1,45 @@
+{% extends "layout.html" %} 
+
+{% block body %} 
+<style>
+    table {
+      text-align: center; border: 1px solid white;
+    }
+    th, td {
+      border-style:solid;
+      border-color: #00ffff;
+      padding: 10px;
+    }
+</style>
+    
+<h1>Big Board</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Better 1</th>
+            <th>Bet Amount</th>
+            <th>To Win</th>
+            <th>Better 2</th>
+            <th>Bet Information</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for bet in bets %} 
+            <tr>
+                <td>{{ bet.name1 }}</td>
+                <td>{{ bet.betamount }}</td>
+                <td>{{ bet.towin }}</td>
+                <td>{{ bet.name2 }}</td>
+                <td>{{ bet.betinfo }}</td>
+                <td><form action="/removebet" method="post">
+                    <input name="id" type="hidden" value="{{ bet.id }}">
+                    <input type="submit" value="Remove Bet">
+                </form></td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
