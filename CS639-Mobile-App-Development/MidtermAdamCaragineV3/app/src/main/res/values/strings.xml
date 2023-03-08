@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MidtermAdamCaragineV3</string>
+    <string name="activity2_name">SecondActivity</string>
+    <string name="enteramount">Enter Amount Below</string>
+    <string name="convert">Convert</string>
+    <string name="input">Enter Euro Amount</string>
+</resources>

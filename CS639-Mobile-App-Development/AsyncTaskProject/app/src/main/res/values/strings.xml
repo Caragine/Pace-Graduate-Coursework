@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AsyncTaskProject</string>
+    <string name="readbutton">Read Image</string>
+    <string name="loadingtext">Loading Image…</string>
+    <string name="clearbutton">Clear</string>
+    <string name="imageURL">https://livability.com/sites/default/files/151FLICKRYON032.crop_.jpg</string>
+    <string name="previous">x</string>
+    <string name="action_settings">settings</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+</resources>

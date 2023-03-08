@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ScrollingText</string>
+    <string name="article_title">2021 MLB POWER RANKINGS</string>
+    <string name="article_subtitle">Ranking all 30 MLB teams before the 2021 season begins</string>
+    <string name="article_text">
+\n
+        Rankings Provided by www.mlb.com/news/mlb-power-rankings-to-begin-2021
+        \n
+        \n
+        <b>TOP 5:</b> \n
+        <b>1. Dodgers</b> \n
+<b>2. Yankees</b> \n
+<b>3. Padres</b> \n
+<b>4. Braves</b> \n
+        <b>5. Twins</b> \n
+        \n
+        <b>The Rest:</b> \n
+6. White Sox \n
+7. Athletics \n
+8. Mets \n
+9. Blue Jays \n
+10. Rays \n
+11. Indians \n
+12. Cardinals \n
+13. Astros \n
+14. Phillies \n
+15. Cubs \n
+16. Reds \n
+17. Marlins \n
+18. Brewers \n
+19. Angels \n
+20. Giants \n
+21. Mariners \n
+22. Nationals \n
+23. Red Sox \n
+24. Tigers \n
+25. Royals \n
+26. D-backs \n
+27. Rockies \n
+28. Rangers \n
+29. Orioles \n
+30. Pirates</string>
+</resources>

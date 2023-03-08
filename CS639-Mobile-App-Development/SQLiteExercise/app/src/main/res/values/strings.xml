@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SQLiteExercise</string>
+    <string name="insertHint">Enter Name to Insert</string>
+    <string name="insertBtn">Insert</string>
+</resources>
