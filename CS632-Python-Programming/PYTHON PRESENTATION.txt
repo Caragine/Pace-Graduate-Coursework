@@ -1,0 +1,39 @@
+D: (drv)
+C:/Users/Adam/Documents/PACE/TEST/test.txt (fil)
+G: (drv)
+C:/Users/Adam/Documents/PACE/TEST (fld)
+-d (shows all 3 drives)
+
+
+folders:
+
+D:\PycharmProjects\list_content
+
+D:\TESTVIDEOS
+
+C:\Users\Adam\Documents\PACE\TEST\directory1
+
+C:\Users\Adam\Documents\PACE\TEST\directory2
+
+
+files:
+C:/Users/Adam/Documents/PACE/TEST/test.txt
+C:/Users/Adam/Documents/PACE/TEST/test.txt -v
+C:/Users/Adam/Documents/PACE/TEST/test.txt -vv
+C:/Users/Adam/Documents/PACE/TEST/test.txt -q
+
+D:\TESTVIDEOS\test.mp4
+
+C:/Users/Adam/Documents/PACE/CS632P-Spring-2021-Project-1.pdf
+
+types:
+.txt
+.docx
+.py
+
+
+python list_content.py D: C:/Users/Adam/Documents/PACE/CS632P-Spring-2021-Project-1.pdf D:\TESTVIDEOS\test.mp4 G: .docx -d
+
+python list_content.py G: -l
+
+python list_content -t

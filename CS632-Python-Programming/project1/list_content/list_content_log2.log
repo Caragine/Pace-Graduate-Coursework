@@ -1,0 +1,40 @@
+2021-03-31 18:39:29 root INFO     D: 139 directories 1076 files 914.53 GB Total 280.28 GB Used 634.25 GB Free
+2021-03-31 18:40:07 root INFO     C: 88739 directories 1056465 files 237.47 GB Total 167.87 GB Used 69.6 GB Free
+2021-03-31 18:40:07 root INFO     D: 139 directories 1076 files 914.53 GB Total 280.28 GB Used 634.25 GB Free
+2021-03-31 18:40:07 root INFO     E: 0 directories 12 files 2.83 GB Total 2.83 GB Used 0 B Free
+2021-03-31 18:40:07 root INFO     G: 69 directories 8813 files 4.55 TB Total 1.12 TB Used 3.43 TB Free
+2021-03-31 18:40:56 root INFO     test | .txt | 754.0B | 03/24/2021 06:29 PM
+2021-03-31 18:41:06 root DEBUG    Verbose on
+2021-03-31 18:41:06 root INFO     File Name: test | File Type: .txt | File Size: 754.0B | Modified Date: 03/24/2021 06:29 PM
+2021-03-31 18:41:24 root INFO     test | .txt | 754.0B | 03/24/2021 06:29 PM
+2021-03-31 18:41:24 root INFO     CS632P-Spring-2021-Project-1 | .pdf | 119.88KB | 03/09/2021 08:33 PM
+2021-03-31 18:41:24 root INFO     test | .mp4 | 98.38MB | 03/23/2021 03:14 AM
+2021-03-31 18:42:27 root INFO     D: 139 directories 1076 files 914.53 GB Total 280.28 GB Used 634.25 GB Free
+2021-03-31 18:42:27 root INFO     CS632P-Spring-2021-Project-1 | .pdf | 119.88KB | 03/09/2021 08:33 PM
+2021-03-31 18:42:27 root INFO     test | .mp4 | 98.38MB | 03/23/2021 03:14 AM
+2021-03-31 18:42:27 root INFO     G: 69 directories 8813 files 4.55 TB Total 1.12 TB Used 3.43 TB Free
+2021-03-31 18:42:27 root INFO     Checking drives on basis of type of file
+2021-03-31 18:42:38 root INFO     .docx | 157 | 83.66MB
+2021-03-31 18:44:11 root INFO     C: 88739 directories 1056465 files 237.47 GB Total 167.87 GB Used 69.6 GB Free
+2021-03-31 18:44:11 root INFO     D: 139 directories 1076 files 914.53 GB Total 280.28 GB Used 634.25 GB Free
+2021-03-31 18:44:11 root INFO     E: 0 directories 12 files 2.83 GB Total 2.83 GB Used 0 B Free
+2021-03-31 18:44:11 root INFO     G: 69 directories 8813 files 4.55 TB Total 1.12 TB Used 3.43 TB Free
+2021-03-31 18:45:37 root INFO     Checking drives on basis of type of file
+2021-03-31 18:45:49 root INFO     .txt | 1746 | 173.85MB
+2021-03-31 18:45:49 root INFO     .TXT | 3 | 8.05KB
+2021-03-31 18:45:49 root INFO     Checking drives on basis of type of file
+2021-03-31 18:46:00 root INFO     .docx | 157 | 83.66MB
+2021-03-31 18:46:00 root INFO     Checking drives on basis of type of file
+2021-03-31 18:46:11 root INFO     .py | 1094 | 11.61MB
+2021-03-31 18:47:05 root INFO     test | .mp4 | 98.38MB | 03/23/2021 03:14 AM
+2021-03-31 18:47:07 root DEBUG    Verbose on
+2021-03-31 18:47:07 root INFO     File Name: test | File Type: .mp4 | File Size: 98.38MB | Modified Date: 03/23/2021 03:14 AM
+2021-03-31 18:47:09 root DEBUG    Verbose on
+2021-03-31 18:47:09 root INFO     The file named test is a .mp4 file and is 98.38MB. It was last modifided on 03/23/2021 03:14 AM.
+2021-03-31 18:47:11 root DEBUG    Quiet mode on
+2021-03-31 18:47:11 root INFO     test .mp4 98.38MB 03/23/2021 03:14 AM
+2021-03-31 18:57:39 root INFO     Checking drives with -t arguments
+2021-03-31 18:57:39 root INFO      | 4 | 12.0KB
+2021-03-31 18:57:39 root INFO     .docx | 4 | 382.0KB
+2021-03-31 18:57:39 root INFO     .pdf | 4 | 403.72KB
+2021-03-31 18:57:39 root INFO     .txt | 1 | 754.0B
