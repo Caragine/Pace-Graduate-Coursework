@@ -1,0 +1,14 @@
+/* if sub == 1 then out = a - b
+   else  out = a + b
+
+*/
+
+CHIP SubOrAdder16 {
+     IN a[16], b[16], sub;
+     OUT out[16];
+    
+ PARTS:
+Expander16(in=sub, out[0]=sub0, out[1]=sub1, out[2]=sub2, out[3]=sub3, out[4]=sub4, out[5]=sub5, out[6]=sub6, out[7]=sub7, out[8]=sub8, out[9]=sub9, out[10]=sub10, out[11]=sub11, out[12]=sub12, out[13]=sub13, out[14]=sub14, out[15]=sub15);  
+Xor16(a[0..15]=b[0..15], b[0]=sub0,  b[1]=sub1, b[2]=sub2, b[3]=sub3, b[4]=sub4, b[5]=sub5, b[6]=sub6, b[7]=sub7, b[8]=sub8, b[9]=sub9, b[10]=sub10, b[11]=sub11, b[12]=sub12, b[13]=sub13, b[14]=sub14, b[15]=sub15, out[0]=subt0, out[1]=subt1, out[2]=subt2, out[3]=subt3, out[4]=subt4, out[5]=subt5, out[6]=subt6, out[7]=subt7, out[8]=subt8, out[9]=subt9, out[10]=subt10, out[11]=subt11, out[12]=subt12, out[13]=subt13, out[14]=subt14, out[15]=subt15);
+Add16CC(a[0..15]=a[0..15], b[0]=subt0, b[1]=subt1, b[2]=subt2, b[3]=subt3, b[4]=subt4, b[5]=subt5, b[6]=subt6, b[7]=subt7, b[8]=subt8, b[9]=subt9, b[10]=subt10, b[11]=subt11, b[12]=subt12, b[13]=subt13, b[14]=subt14, b[15]=subt15, cin=sub, out[0..15]=out[0..15], cout=carry);
+}

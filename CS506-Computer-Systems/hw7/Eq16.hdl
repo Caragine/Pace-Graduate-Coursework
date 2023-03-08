@@ -1,0 +1,45 @@
+
+/**
+ * Eq16 gate:
+ * out = 1 if (a[0] == b[0] and a[1] == b[1] and ... and a[15] == b[15])
+ *       0 otherwise
+ */
+
+CHIP Eq16 {
+    IN a[16], b[16];
+    OUT out;
+
+    PARTS:
+    // Put your code here:
+Eq (a=a[0], b=b[0], out=eq0);
+Eq (a=a[1], b=b[1], out=eq1);
+Eq (a=a[2], b=b[2], out=eq2);
+Eq (a=a[3], b=b[3], out=eq3);
+Eq (a=a[4], b=b[4], out=eq4);
+Eq (a=a[5], b=b[5], out=eq5);
+Eq (a=a[6], b=b[6], out=eq6);
+Eq (a=a[7], b=b[7], out=eq7);
+Eq (a=a[8], b=b[8], out=eq8);
+Eq (a=a[9], b=b[9], out=eq9);
+Eq (a=a[10], b=b[10], out=eq10);
+Eq (a=a[11], b=b[11], out=eq11);
+Eq (a=a[12], b=b[12], out=eq12);
+Eq (a=a[13], b=b[13], out=eq13);
+Eq (a=a[14], b=b[14], out=eq14);
+Eq (a=a[15], b=b[15], out=eq15);
+And (a=eq0, b=eq1, out=eq01);
+And (a=eq2, b=eq3, out=eq23);
+And (a=eq4, b=eq5, out=eq45);
+And (a=eq6, b=eq7, out=eq67);
+And (a=eq8, b=eq9, out=eq89);
+And (a=eq10, b=eq11, out=eq1011);
+And (a=eq12, b=eq13, out=eq1213);
+And (a=eq14, b=eq15, out=eq1415);
+And (a=eq01, b=eq23, out=eq0123);
+And (a=eq45, b=eq67, out=eq4567);
+And (a=eq89, b=eq1011, out=eq891011);
+And (a=eq1213, b=eq1415, out=eq12131415);
+And (a=eq0123, b=eq4567, out=eq01234567);
+And (a=eq891011, b=eq12131415, out=eq89101112131415);
+And (a=eq01234567, b=eq89101112131415, out=out);
+}

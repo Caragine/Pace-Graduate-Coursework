@@ -1,0 +1,20 @@
+
+/**
+ * Memory of 4 registers, each 16 bit-wide. Out holds the value
+ * stored at the memory location specified by address. If load=1, then 
+ * the in value is loaded into the memory location specified by address 
+ * (the loaded value will be emitted to out after the next time step.)
+ */
+
+CHIP RAM4 {
+    IN in[16], load, address[2];
+    OUT out[16];
+
+    PARTS:
+DMux4Way(in=load, sel=address[0..1], a=a, b=b, c=c, d=d);
+Register(in=in, load=a, out=r0);
+Register(in=in, load=b, out=r1);
+Register(in=in, load=c, out=r2);
+Register(in=in, load=d, out=r3);
+Mux4Way16(a=r0, b=r1, c=r2, d=r3, sel=address[0..1], out=out);
+}

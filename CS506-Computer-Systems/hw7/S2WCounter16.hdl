@@ -1,0 +1,26 @@
+/**
+ * S2WCounter16 gate: a two-way stateful counter:
+ *   op[1]   op[0]    mode  
+ *    0        0       up        increment
+ *    0        0      down       decrement 
+ *    0        1       *         set
+ *    1        0       *         mode = up,  increment
+ *    1        1       *         mode = down, decrement
+ */
+
+CHIP S2WCounter16 {
+    IN in[16], op[2];
+    OUT out[16];
+
+    PARTS:
+   //put your implementation here
+Bit(in=notop0, load=op[1], out=mode);
+Not(in=op[0], out=notop0);
+Not(in=op[1], out=notop1);
+Not(in=mode, out=notmode);
+Or(a=op[1], b=notop0, out=op1prime);
+And(a=notop1, b=notmode, out=andout);
+Or(a=andout, b=op[0], out=op0prime);
+TC(in=in, op[0]=op0prime, op[1]=op1prime, out=out);
+
+}

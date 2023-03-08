@@ -1,0 +1,16 @@
+CHIP TC {
+IN in[16], op[2];
+OUT out[16];
+
+PARTS:
+Mux4Way16(a=count, b=in, c=count, d=count, sel=op[0..1], out=muxout);
+Eq16(a=muxout, b[0..15]=false, out=eq16out1);
+Eq(a=op[0], b=false, out=eqout1);
+Eq16(a=muxout, b[0..15]=true, out=eq16out2);
+Eq(a=op[0], b=true, out=eqout2);
+Nand(a=eq16out1, b=eqout1, out=nandout1);
+Nand(a=eq16out2, b=eqout2, out=nandout2);
+And(a=nandout1, b=nandout2, out=orout);
+Register(in=muxout, load=orout, out=out1, out=out);
+SubOrAdder16(a=out1, b[0]=true, sub=op[0], out=count);
+}
