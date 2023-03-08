@@ -31,18 +31,3 @@ Existing solutions:
 
 - Android Studio
 - [NewsApi] (https://newsapi.org/)
-
-<h1>Pen and Paper design </h1>
-
-<h4>Main Activity</h4>
-<img src="https://webpage.pace.edu/ad44798n/MobileProjectGUI/1.1-Main%20Activity.png" width="300px" />
-<h4>News Activity</h4>
-<img src="https://webpage.pace.edu/ad44798n/MobileProjectGUI/2.1-Activity%202.png" width="300px" />
-<h4>Drop Down Menu</h4>
-<img src="https://webpage.pace.edu/ad44798n/MobileProjectGUI/3.1-Drop%20down%20menu.png" width="300px" />
-<h4>Settings Activity</h4>
-<img src="https://webpage.pace.edu/ad44798n/MobileProjectGUI/4.1-Settings%20Activity.png" width="300px" />
-<h4>Log in Activity</h4>
-<img src="https://webpage.pace.edu/ad44798n/MobileProjectGUI/5.1-Login%20Activity.png" width="300px" />
-
-
