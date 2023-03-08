@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "750580406354",
+    "project_id": "millennial-news",
+    "storage_bucket": "millennial-news.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750580406354:android:2468f8ab608cafbb17678b",
+        "android_client_info": {
+          "package_name": "com.example.millennialnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750580406354-f8l1dai65u01jiac32m1brnn14053g75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.millennialnews",
+            "certificate_hash": "83c48f8d11f8d34d2d4a3966bde59a1bca868ce4"
+          }
+        },
+        {
+          "client_id": "750580406354-gutdnp51907kkm0lip36srmqs96r7vg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMegLzBvrl8kI7BdrC2lFIknji4Dx1E7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750580406354-gutdnp51907kkm0lip36srmqs96r7vg1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
